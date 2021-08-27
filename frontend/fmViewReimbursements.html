@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reimbursements Page</title>
+    <link rel="stylesheet" href="../css/all.css"/>
+    <link rel="stylesheet" href="../css/viewReimbursements.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <center><div class="nav-buttons">
+          <a href = "fmAddReimbursement.html">Add Reimbursement</a> &nbsp;
+          <a id = "logout">Logout</a>
+        </div></center>
+      </nav>
+    <h1>View Reimbursements</h1>
+
+    <section id="reimbursements">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id </th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                    <th>Author First Name</th>
+                    <th>Author Last Name</th>
+                    <th>Status</th>
+                    <th>Resolve</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </section>
+    <div class="container">
+        <div class="center">
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="status">Status</label>
+                <select class="form-select" id="status">
+                  <option selected value = "all" >All</option>
+                  <option value="pending">Pending</option>
+                  <option value="approved">Approved</option>
+                  <option value="denied">Denied</option>
+                </select>
+                <button class="btn btn-primary" id = "filter" >Filter</button>
+              </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="fmViewReimbursements.js"></script>
+</body>
+
+</html>
